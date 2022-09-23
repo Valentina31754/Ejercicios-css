@@ -1,0 +1,71 @@
+
+/*
+@keyframes mover{
+    0%{
+        top: 0; left:0;
+    }
+    25%{
+         top: 0; left : 500px; 
+         background-color: red;color: black;
+    }
+    50%{
+        top:500px; left:500px;
+        }
+    75%{
+        top:500px; left: 0px;
+        background-color: red;color: #000;
+    }
+    100%{
+        top:0; left: 0;
+    }
+}
+*/
+
+
+.fantasma1,
+.fantasma2,
+.fantasma3,
+.fantasma4,
+.fantasma5{
+    position: relative;
+    width: 20px;
+    height: 60px;
+    background-color: pink;
+    color: aliceblue;
+    padding: 5px 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    animation: carrera 3s ease;
+}
+
+.fantasma2{
+    background-color: aqua;
+    animation: carrera 3s all;
+}
+    
+
+.fantasma3{
+    background-color: rgb(121, 196, 196);
+    animation: carrera 3s ease-in;
+}
+
+
+.fantasma4{
+    background-color: bisque;
+    animation: carrera 3s ease-out;
+
+}
+.fantasma5{
+    background-color: rgb(152, 104, 197);
+    animation: carrera 3s ease-in-out;
+
+}
+
+@keyframes carrera {
+    0%{
+        top: 0;left: 0;
+    }
+    100%{
+        top: 0; left: 500px;
+    }
+}

@@ -1,0 +1,87 @@
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    
+}
+
+.cuadro2{
+    background-color:violet ;
+}
+
+.cuadro3{
+    background-color: indianred;
+}
+
+.cuadro4{
+    background-color: dimgrey;
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    }
+
+/*medidas celulares en vertical*/
+    @media(max-width:576px){
+        .contenedor{
+            width: 100%;
+            height: auto;
+            background-color:grey;
+            display:flex;
+            flex-direction:column-reverse;
+        }
+    }
+    
+    
+    /*medidas horizontal celulares y tablets*/
+    @media(min-width:557px) and  (max-width:12024px){
+        .contenedor{
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+        }
+    }
+    
+
+    /*medidas para portatiles*/
+    @media(min-width:1025px) and  (max-width:1300px){
+        .contenedor{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .cuadro1,
+        .cuadro2,
+        .cuadro3,
+        .cuadro4{
+            border-radius: 50px;
+        }
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
